@@ -47,9 +47,7 @@ public class LoginPagePlayFab : MonoBehaviour
     #region Buttom Functions
 
     public void RegisterUser() {
-        
-        
-        
+  
         var request = new RegisterPlayFabUserRequest {
             DisplayName = UsernameRegisterInput.text,
             Email = EmailRegisterInput.text,
@@ -138,4 +136,22 @@ public class LoginPagePlayFab : MonoBehaviour
         MessageText.text = "Loggin in";
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
+
+/*
+    public void SendLeaderboard(int score){
+        var request = new UpdatePlayerStatisticsRequest {
+                Statistics = new List<StatisticUpdate>{
+                    new StatisticUpdate {
+                        StatisticName = "GiftsScore",
+                        Value = score
+                    }
+                }
+        };
+    PlayFabClientAPI.UpdatePlayerStatistics(request, OnLeaderboardUpdate, OnError);
+    }
+
+    void OnLeaderboardUpdate(UpdaetPlayerStatisticsResult result){
+        Debug.Log("Successfull leaderboard sent !");
+    }
+*/
 }
