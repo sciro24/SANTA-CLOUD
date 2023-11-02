@@ -27,7 +27,26 @@ public class Finish : MonoBehaviour
 
     private void CompleteLevel()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        if(SceneManager.GetActiveScene().buildIndex == 5) {
+            if(Timer.score > 0) {
+                Play_Leaderboard.SendLeaderboard("TimeScoreHorizontal", Timer.score);
+            }
+            Timer.elapsedTime = 0.0f;
+            Timer2.elapsedTime = 0.0f;
+            Timer3.elapsedTime = 0.0f;
+            SceneManager.LoadScene(9);
+        } else if(SceneManager.GetActiveScene().buildIndex == 8) {
+            if(Timer.score > 0) {
+                Play_Leaderboard.SendLeaderboard("TimeScoreVertical", Timer.score);
+            }
+            Timer.elapsedTime = 0.0f;
+            Timer2.elapsedTime = 0.0f;
+            Timer3.elapsedTime = 0.0f;
+            SceneManager.LoadScene(9);
+        } else {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
+        
     }
 
 }

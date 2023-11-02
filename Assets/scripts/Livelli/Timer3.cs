@@ -8,6 +8,7 @@ public class Timer3 : MonoBehaviour
 
     [SerializeField] TextMeshProUGUI timerText;
     public static float elapsedTime;  //VARIABILE TIMER PER OGNI LIVELLO
+    public static int score;
 
     // Start is called before the first frame update
     void Start()
@@ -23,6 +24,7 @@ public class Timer3 : MonoBehaviour
         int minutes = Mathf.FloorToInt(elapsedTime / 60);
         int seconds = Mathf.FloorToInt(elapsedTime % 60);
         timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+        score = minutes * 60 + seconds;
         }
         
     }
