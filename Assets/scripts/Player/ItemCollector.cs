@@ -20,7 +20,7 @@ public class ItemCollector : MonoBehaviour
             collectionSoundEffect.Play();
             Destroy(collision.gameObject);
             cherries++;
-            cherriesText.text = "Gifts: " + cherries;
+            cherriesText.text = " " + cherries;
             Timer.elapsedTime -= 1.0f;
         }
     }
