@@ -100043,7 +100043,7 @@ GameObject:
   - component: {fileID: 1688044688}
   - component: {fileID: 1688044687}
   - component: {fileID: 1688044686}
-  - component: {fileID: 1688044685}
+  - component: {fileID: 1688044690}
   m_Layer: 5
   m_Name: Canvas_Timer
   m_TagString: Untagged
@@ -100051,19 +100051,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1688044685
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1688044684}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e63cc68f9ac43a241b534d6684a96836, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timerText: {fileID: 1699508883}
 --- !u!114 &1688044686
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -100147,6 +100134,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1688044690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1688044684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13bad25bd1c591e43b81db2ac3523b2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timerText: {fileID: 1699508883}
 --- !u!1 &1699508882
 GameObject:
   m_ObjectHideFlags: 0
@@ -100158,7 +100158,7 @@ GameObject:
   - component: {fileID: 1699508886}
   - component: {fileID: 1699508885}
   - component: {fileID: 1699508883}
-  - component: {fileID: 1699508884}
+  - component: {fileID: 1699508887}
   m_Layer: 5
   m_Name: Timer Text
   m_TagString: Untagged
@@ -100255,19 +100255,6 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &1699508884
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1699508882}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e63cc68f9ac43a241b534d6684a96836, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timerText: {fileID: 1699508883}
 --- !u!222 &1699508885
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -100295,6 +100282,19 @@ RectTransform:
   m_AnchoredPosition: {x: 274, y: 214}
   m_SizeDelta: {x: 234.0948, y: 64.7645}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1699508887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1699508882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13bad25bd1c591e43b81db2ac3523b2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timerText: {fileID: 1699508883}
 --- !u!1001 &1701167009
 PrefabInstance:
   m_ObjectHideFlags: 0

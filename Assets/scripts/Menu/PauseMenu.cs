@@ -13,8 +13,12 @@ public class PauseMenu : MonoBehaviour
    }
 
    public void Home() {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(2);
+        Timer.elapsedTime = 0.0f;
+        Timer2.elapsedTime = 0.0f;
+        Timer3.elapsedTime = 0.0f;
         Time.timeScale = 1;
+
    }
 
    public void Resume() {
